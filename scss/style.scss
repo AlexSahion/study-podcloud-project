@@ -6,6 +6,7 @@
 @import "config/fonts";
 @import "config/icons";
 @import "config/functions";
+@import "config/mixins";
 @import "config/vars";
 @import "config/reset";
 @import "config/base";
@@ -13,3 +14,6 @@
 @import "layout/header";
 @import "layout/footer";
 
+body{
+	background: url('../img/back.jpg');
+}
