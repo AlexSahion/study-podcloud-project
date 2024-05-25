@@ -1,8 +1,7 @@
 body{
     font-family: $font-family;
     position: relative;
-	 background: rgb(242, 254, 255);
-    &.lock{
+    &._lock{
         overflow: hidden;
     }
 }
@@ -16,4 +15,27 @@ body{
     flex-direction: column;
     min-height: 100%;
     overflow: hidden;
+}
+.btn{
+	color: $purple-color;
+	border: 1px solid $purple-color;
+	font-weight: 500;
+	line-height:prc(16, 19);
+	text-transform: capitalize;
+	background-color: inherit;
+	min-height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	white-space: nowrap;
+	padding: 0 30px;
+	border-radius: 10px;
+	transition: $default-trans;
+	&:hover{
+		background-color: rgb(174, 118, 255);
+		color: rgb(255, 255, 255);
+	}
+	&:active{
+		transform: translate(0, 2px);
+	}
 }
