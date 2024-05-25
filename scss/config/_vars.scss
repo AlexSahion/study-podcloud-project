@@ -1,9 +1,11 @@
 //Контейнер.............................................
-$container-width:1168px;
+$container-width:1350px;
+$container: 1350;
 $main-offset:20px;
 //Шрифты.............................................
-$font-family:'Font';
-$main-color: #000;
-$font-size:14px;
+$font-family:'Rubik';
+$main-color: rgb(85, 85, 85);
+$purple-color: rgb(174, 118, 255);
+$font-size:16px;
 //Прочее.............................................
 $default-trans:all 300ms ease-in-out;
