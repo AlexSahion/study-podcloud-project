@@ -8,3 +8,10 @@ if (iconMenu) {
 		menuBody.classList.toggle("_active")
 	})
 }
+
+new Swiper('.categories__slider', {
+	slidesPerView: 'auto',
+	freeMode: true,
+	loop: true,
+
+})
