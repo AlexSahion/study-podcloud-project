@@ -196,8 +196,17 @@ body._lock {
   transform: translate(0, 2px);
 }
 
+.title {
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 42px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 120%;
+}
+
 .text {
-  color: rgb(108, 108, 108);
+  color: rgb(85, 85, 85);
   font-family: Rubik;
   font-size: 16px;
   font-weight: 300;
@@ -454,6 +463,7 @@ body._lock {
   }
 }
 .main-page__text {
+  color: rgb(108, 108, 108);
   margin-top: 12px;
 }
 @media (max-width: 470px) {
@@ -482,6 +492,7 @@ body._lock {
 .main-page__btn-revers {
   flex-direction: row-reverse;
 }
+
 .right-main-page__items {
   display: flex;
   -moz-column-gap: 25px;
@@ -641,5 +652,177 @@ body._lock {
 @media (max-width: 470px) {
   .right-main-page__text {
     font-size: 15px;
+  }
+}
+
+.difference__container {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  align-items: center;
+  padding-top: 120px;
+}
+@media (max-width: 1350px) {
+  .difference__container {
+    padding-top: calc(40px + 80 * (100vw - 320px) / 1030);
+  }
+}
+@media (max-width: 930px) {
+  .difference__container {
+    justify-content: center;
+  }
+}
+.difference__img {
+  flex: 0 1 50%;
+}
+.difference__img img {
+  max-width: 100%;
+}
+@media (max-width: 930px) {
+  .difference__img {
+    display: none;
+  }
+}
+.difference__content {
+  flex: 0 1 40%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+@media (max-width: 930px) {
+  .difference__content {
+    flex: 0 1 80%;
+  }
+}
+@media (max-width: 930px) {
+  .difference__content {
+    align-items: center;
+  }
+}
+@media (max-width: 930px) {
+  .difference__title {
+    text-align: center;
+  }
+}
+@media (max-width: 470px) {
+  .difference__title {
+    font-size: 34px;
+  }
+}
+@media (max-width: 930px) {
+  .difference__text {
+    text-align: center;
+  }
+}
+@media (max-width: 470px) {
+  .difference__text {
+    font-size: 16px;
+  }
+}
+.difference__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.difference__list li {
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+  line-height: 187.5%;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+.difference__list li::before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url("../../../img/difference/ok.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media (max-width: 470px) {
+  .difference__list li {
+    font-size: 16px;
+  }
+}
+.difference__podcast {
+  margin-top: 10px;
+  border-radius: 40px;
+  box-shadow: 0px 10px 50px 0px rgba(174, 118, 255, 0.05);
+  background: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+@media (max-width: 930px) {
+  .difference__podcast {
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+  }
+}
+.difference__info {
+  margin-left: 15px;
+  flex: 0 0 20%;
+}
+@media (max-width: 930px) {
+  .difference__info {
+    flex: 0 0 50%;
+    margin-left: 0;
+  }
+}
+.difference__name {
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-weight: 500;
+  line-height: 150%;
+  text-transform: capitalize;
+}
+.difference__professional {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 121.4285714286%;
+}
+.difference__waves {
+  flex: 0 1 100%;
+  background: url("../../../img/difference/waves.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30px;
+  margin-left: 45px;
+  margin-right: 45px;
+}
+@media (max-width: 1350px) {
+  .difference__waves {
+    margin-left: calc(15px + 30 * (100vw - 320px) / 1030);
+  }
+}
+@media (max-width: 1350px) {
+  .difference__waves {
+    margin-right: calc(15px + 30 * (100vw - 320px) / 1030);
+  }
+}
+@media (max-width: 930px) {
+  .difference__waves {
+    display: none;
+  }
+}
+.difference__play {
+  color: rgb(174, 118, 255);
+  background: rgba(174, 118, 255, 0.05);
+  padding: 19px;
+  border-radius: 50%;
+  transition: all 300ms ease-in-out;
+}
+.difference__play:hover {
+  color: #000;
+  background-color: rgb(174, 118, 255);
+}
+@media (max-width: 400px) {
+  .difference__play {
+    padding: 13px;
+    font-size: 14px;
   }
 }
