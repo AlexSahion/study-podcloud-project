@@ -1,0 +1,235 @@
+.main-page {
+	background: url('../img/back.jpg');
+	background-size: contain;
+	&__container {
+		min-height: 100vh;
+		padding-top: 150px;
+		display: flex;
+		align-items: center;
+		column-gap: 50px;
+		padding-bottom: 100px;
+		@include adaptive-value('padding-bottom', 100, 40);
+		@media (max-width:872px) {
+			flex-direction: column;
+			row-gap: 40px;
+			
+		}
+	}
+
+	&__content {
+		flex: 0 0 45%;
+		@media (max-width:872px) {
+			display: flex;
+			text-align: center;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	&__titile {
+		color: rgb(255, 255, 255);
+		font-family: Montserrat;
+		font-size: 50px;
+		font-weight: 700;
+		text-transform: capitalize;
+		@media (max-width:470px) {
+			font-size: 40px;
+		}
+	}
+
+	&__text {
+		margin-top: 12px;
+		@media (max-width:470px) {
+			font-size: 16px;
+		}
+	}
+
+	&__buttons {
+		margin-top: 30px;
+		display: flex;
+		flex-wrap: wrap;
+		column-gap: 15px;
+		row-gap: 15px;
+		@media (max-width:872px) {
+			justify-content: center;
+		}
+	}
+
+	&__btn {
+		display: flex;
+		column-gap: 10px;
+		&-revers{
+			flex-direction: row-reverse;
+		}
+	}
+
+	&__right {
+	}
+}
+
+.btn {
+}
+
+.right-main-page {
+
+	&__items {
+		display: flex;
+		column-gap: 25px;
+		row-gap: 64px;
+		@include adaptive-value('row-gap', 64, 10);
+		min-height: 60vh;
+		flex-direction: column;
+		justify-content: space-between;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: auto auto auto;
+		grid-template-areas: 'img-top content-top content-top'
+									'img-top exist img-bottom'
+									'content-bottom content-bottom img-bottom';
+		@media (max-width:1017px) {
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr;
+			grid-template-areas: 'content-top'
+										'content-bottom';
+		}
+		@media (max-width:872px) {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	&__item {
+		display: flex;
+	}
+
+	&__img {
+		@media (max-width:1017px) {
+			display: none;
+		}
+		img{
+			max-width: 120%;
+		}
+		&-top{
+			grid-area: img-top;
+		}
+		&-bottom{
+			grid-area: img-bottom;
+		}
+		
+	}
+
+	&__content {
+		flex: 0 1 auto;
+		border-radius: 20px;
+		background: rgb(29, 29, 29);
+		padding: 25px 30px;
+		&-top{
+			grid-area: content-top;
+		}
+		&-bottom{
+			grid-area: content-bottom;
+		}
+		@media (max-width:872px) {
+			max-width: 500px;
+		}
+	}
+
+	&__name {
+		color: rgb(174, 118, 255);
+		font-family: $font-family-second;
+		font-weight: 500;
+		line-height: prc(24, 16);
+		text-transform: capitalize;
+	}
+
+	&__subtitle {
+		margin-top: 10px;
+		color: rgb(255, 255, 255);
+		font-family: $font-family-second;
+		font-weight: 500;
+		line-height: prc(24, 16);
+		text-transform: capitalize;
+		
+	}
+
+	&__action {
+		margin-top: 39px;
+		display: flex;
+		align-items: center;
+		color: rgb(255, 255, 255);
+		font-size: 14px;
+		font-weight: 400;
+		line-height: prc(24, 14);
+		text-transform: capitalize;
+		column-gap: 10px;
+		transition: $default-trans;
+		&::before{
+			color: #fff;
+			background: rgba(255, 255, 255, 0.1);
+			padding: 13px 13px 13px 15px;
+			align-items: center;
+			justify-content: center;
+			border-radius: 50%;
+			transition: $default-trans;
+		}
+		&:hover{
+			color: $purple-color;
+			&::before{
+				background-color: $purple-color;
+			}
+		}
+		@media (max-width:470px) {
+			margin-top: 20px;
+		}
+	}
+
+	&__name-actions {
+	}
+
+	&__header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		column-gap: 10px;
+	}
+
+	&__icons {
+		img{
+			max-width: 100%;
+		}
+		@media (max-width:420px) {
+			display: none;
+		}
+	}
+
+	&__title {
+		color: rgb(255, 255, 255);
+		font-family: $font-family-second;
+		font-size: 18px;
+		font-weight: 600;
+		line-height: prc(24, 18);
+		text-transform: capitalize;
+		@media (max-width:470px) {
+			font-size: 15px;
+		}
+	}
+
+	&__open {
+		padding: 0 15px;
+		min-height: 37px;
+		&::before{
+			transform: rotate(-45deg);
+		}
+	}
+
+	&__text {
+		color: rgb(211, 211, 211);
+		font-weight: 300;
+		line-height: prc(28, 16);
+		margin-top: 17px;
+		@media (max-width:470px) {
+			font-size: 15px;
+		}
+	}
+}
