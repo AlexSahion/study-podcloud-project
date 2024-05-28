@@ -79,7 +79,6 @@
 		@include adaptive-value('row-gap', 64, 10);
 		min-height: 60vh;
 		flex-direction: column;
-		justify-content: space-between;
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-rows: auto auto auto;
