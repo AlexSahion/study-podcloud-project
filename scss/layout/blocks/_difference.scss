@@ -1,0 +1,150 @@
+.difference {
+
+		&__container {
+			display: flex;
+			justify-content: space-between;
+			column-gap: 40px;
+			align-items: center;
+			@include adaptive-value('padding-top', 120, 40);
+			@media (max-width: 930px) {
+				justify-content: center;
+			}
+		}
+
+		&__img {
+			flex: 0 1 50%;
+			img{
+				max-width: 100%;
+			}
+			@media (max-width: 930px) {
+				display: none;
+			}
+		}
+
+		&__content {
+			flex: 0 1 40%;
+			display: flex;
+			flex-direction: column;
+			row-gap: 15px;
+			@media (max-width: 930px) {
+				flex: 0 1 80%;
+			}
+			@media (max-width: 930px) {
+				align-items: center;
+			}
+		}
+
+		&__title {
+			@media (max-width: 930px) {
+				text-align: center;
+			}
+			@media (max-width:470px) {
+				font-size: 34px;
+			}
+		}
+
+		&__text {
+			@media (max-width: 930px) {
+				text-align: center;
+			}
+			@media (max-width:470px) {
+				font-size: 16px;
+			}
+		}
+
+		&__list {
+			display: flex;
+			flex-direction: column;
+			row-gap: 10px;
+			li{
+				color: rgb(0, 0, 0);
+				font-weight: 400;
+				line-height: prc(30,16);
+				display: flex;
+				align-items: center;
+				column-gap: 15px;
+				&::before{
+					content: '';
+					display: block;
+					width: 25px;
+					height: 25px;
+					background: url('../../../img/difference/ok.png');
+					background-size: contain;
+					background-repeat: no-repeat;
+				}
+				@media (max-width:470px) {
+					font-size: 16px;
+				}
+			}
+			
+		}
+
+		&__podcast {
+			margin-top: 10px;
+			border-radius: 40px;
+			box-shadow: 0px 10px 50px 0px rgba(174, 118, 255, 0.05);
+			background: rgb(255, 255, 255);
+			display: flex;
+			align-items: center;
+			padding: 10px;
+			@media (max-width: 930px) {
+				column-gap: 15px;
+			}
+		}
+
+		&__avatar {
+		}
+
+		&__info {
+			margin-left: 15px;
+			flex: 0 0 20%;
+			@media (max-width: 930px) {
+				flex: 0 0 50%;
+				margin-left: 0;
+			}
+		}
+
+		&__name {
+			color: rgb(0, 0, 0);
+			font-family: $font-family-second;
+			font-weight: 500;
+			line-height: prc(24, 16);
+			text-transform: capitalize;
+		}
+
+		&__professional {
+			
+			font-size: 14px;
+			font-weight: 300;
+			line-height: prc(17, 14);
+		}
+
+		&__waves {
+			flex: 0 1 100%;
+			background: url('../../../img/difference/waves.png');
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 30px;
+			@include adaptive-value('margin-left', 45, 15);
+			@include adaptive-value('margin-right', 45, 15);
+			@media (max-width: 930px) {
+				display: none;
+			}
+		}
+
+		&__play {
+			color: rgb(174, 118, 255);
+			background: rgba(174, 118, 255, 0.05);
+			padding: 19px;
+			border-radius: 50%;
+			transition: $default-trans;
+			&:hover{
+				color: #000;
+				background-color: $purple-color;
+			}
+			@media (max-width: 400px) {
+				padding: 13px;
+				font-size: 14px;
+			}
+		}
+}
