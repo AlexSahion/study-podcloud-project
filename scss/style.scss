@@ -12,8 +12,5 @@
 @import "config/base";
 //Layout...................................................
 @import "layout/header";
+@import "layout/blocks/main-page";
 @import "layout/footer";
-
-body{
-	background: url('../img/back.jpg');
-}
