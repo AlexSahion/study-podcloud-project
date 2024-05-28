@@ -40,8 +40,18 @@ body{
 	}
 }
 
+.title {
+	color: rgb(0, 0, 0);
+	font-family: $font-family-second;
+	font-size: 42px;
+	font-weight: 700;
+	text-transform: capitalize;
+	line-height: 120%;
+}
+
+
 .text {
-	color: rgb(108, 108, 108);
+	color: rgb(85, 85, 85);
 	font-family: Rubik;
 	font-size: 16px;
 	font-weight: 300;
