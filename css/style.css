@@ -1342,3 +1342,40 @@ body._lock {
 .item-show__btn {
   border-radius: 0px 0px 30px 30px;
 }
+
+.apps {
+  background: url("../img/back.jpg");
+}
+.apps__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 150px;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  padding: 15px 20px;
+  row-gap: 15px;
+  min-height: 180px;
+}
+@media (max-width: 1350px) {
+  .apps__container {
+    min-height: calc(80px + 100 * (100vw - 320px) / 1030);
+  }
+}
+.apps__link svg {
+  width: 70px;
+  width: 70px;
+}
+@media (max-width: 1350px) {
+  .apps__link svg {
+    width: calc(36px + 34 * (100vw - 320px) / 1030);
+  }
+}
+.apps__link svg path {
+  transition: all 300ms ease-in-out;
+  fill-opacity: 0.2;
+}
+.apps__link:hover svg path {
+  fill-opacity: 1;
+}
