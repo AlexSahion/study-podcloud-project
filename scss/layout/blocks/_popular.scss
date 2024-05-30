@@ -2,7 +2,6 @@
 
 	&__container {
 		@include adaptive-value('padding-top', 120, 60);
-		padding-bottom: 100px;
 	}
 
 	&__header {
