@@ -1,0 +1,32 @@
+.apps {
+	background: url('../img/back.jpg');
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		align-items: center;
+		min-height: 150px;
+		column-gap: 25px;
+		padding: 15px 20px;
+		row-gap: 15px;
+		@include adaptive-value('min-height', 180, 80);
+	}
+
+	&__link {
+		svg{
+			width: 70px;
+			@include adaptive-value('width', 70, 36);
+			path{
+				transition: $default-trans;
+				fill-opacity: 0.2;
+			}
+		}
+		&:hover{
+			svg{
+				path{
+					fill-opacity: 1;
+				}
+			}
+		}
+	}
+}
