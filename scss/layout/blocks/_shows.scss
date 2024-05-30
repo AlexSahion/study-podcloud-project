@@ -1,0 +1,147 @@
+.shows {
+	background: rgb(249, 249, 249);
+	&__container {
+		@include adaptive-value('padding-top', 120, 40);
+		@include adaptive-value('padding-bottom', 120, 60);
+		overflow: hidden;
+		width: 100%;
+		height: 100%;
+	}
+
+	&__titles {
+		max-width: 600px;
+		margin: 0 auto;
+		margin-bottom: 25px;
+	}
+
+	&__title {
+		text-align: center;
+		margin-bottom: 14px;
+		@media (max-width:470px) {
+			font-size: 34px;
+		}
+
+		@media (max-width: 340px) {
+			font-size: 28px;
+		}
+	}
+
+	&__text {
+		text-align: center;
+		@media (max-width:470px) {
+			font-size: 16px;
+		}
+	}
+
+	&__items {
+		align-items: stretch;
+	}
+
+	&__item {
+		overflow: hidden;
+		border-radius: 30px;
+		display: flex;
+		flex-direction: column;
+		row-gap: 25px;
+		cursor: pointer;
+		transition: $default-trans;
+		height: 100%;
+		&:hover{
+			box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
+			
+		}
+	}
+}
+
+.item-show {
+
+	&__img {
+		max-height: 300px;
+		object-fit: contain;
+		overflow: hidden;
+		img{
+			max-width: 100%;
+		}
+	}
+
+	&__content {
+		padding: 0 30px;
+		@media (max-width:480px) {
+			padding: 0 10px;
+		}
+	}
+
+	&__text {
+		margin-bottom: 25px;
+	}
+
+	&__episodes {
+		display: flex;
+		flex-direction: column;
+		row-gap: 20px;
+	}
+
+	&__episode {
+		display: flex;
+		column-gap: 15px;
+		align-items: center;
+		transition: $default-trans;
+		border-radius: 15px;
+		padding: 5px;
+		&:hover{
+			background-color: $purple-color;
+			.item-show__play{
+				&::before{
+					transition: $default-trans;
+					color: #fff;
+				}
+				&:hover{
+					background-color: #fff;
+					&::before{
+						color: #000;
+					}
+				}
+			}
+			.item-show__num-episode{
+				color: #fff;
+			}
+			.item-show__name{
+				color: #fff;
+			}
+		}
+	}
+
+	&__play {
+		padding: 19px;
+		border-radius: 50%;
+		color: $purple-color;
+		background: rgba(174, 118, 255, 0.05);
+		border: 1px solid #fff;
+		transition: $default-trans;
+	}
+
+	&__titles {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__num-episode {
+		font-weight: 300;
+	}
+
+	&__name {
+		color: rgb(0, 0, 0);
+		font-family: $font-family-second;
+		font-size: 18px;
+		font-weight: 500;
+		line-height: prc(30, 18);
+		text-transform: capitalize;
+		@media (max-width:440px) {
+			font-size: 16px;
+		}
+	}
+
+	&__btn {
+		border-radius: 0px 0px 30px 30px;
+	}
+}
