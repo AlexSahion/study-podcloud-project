@@ -2,6 +2,7 @@
 
 	&__container {
 		@include adaptive-value('padding-top', 120, 60);
+		@include adaptive-value('padding-bottom', 120, 40);
 	}
 
 	&__header {
@@ -45,9 +46,6 @@
 		@media (max-width:470px) {
 			font-size: 16px;
 		}
-	}
-
-	&__btn {
 	}
 
 	&__items {
