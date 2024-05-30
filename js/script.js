@@ -15,3 +15,14 @@ new Swiper('.categories__slider', {
 	loop: true,
 
 })
+
+new Swiper('.shows__container', {
+	slidesPerView: 1,
+	loop: true,
+	spaceBetween: 30,
+	breakpoints: {
+		710: {
+			slidesPerView: 2,
+		}
+	}
+})
