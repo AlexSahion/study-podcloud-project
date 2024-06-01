@@ -775,12 +775,23 @@ body._lock {
 }
 @media (max-width: 930px) {
   .difference__podcast {
-    -moz-column-gap: 15px;
-         column-gap: 15px;
+    -moz-column-gap: 7px;
+         column-gap: 7px;
   }
 }
 .difference__podcast:hover {
   box-shadow: 0px 10px 50px 0px rgba(174, 118, 255, 0.3);
+}
+.difference__avatar {
+  min-width: 60px;
+}
+.difference__avatar img {
+  max-width: 100%;
+}
+@media (max-width: 930px) {
+  .difference__avatar {
+    min-width: 40px;
+  }
 }
 .difference__info {
   margin-left: 15px;
@@ -798,6 +809,11 @@ body._lock {
   font-weight: 500;
   line-height: 150%;
   text-transform: capitalize;
+}
+@media (max-width: 400px) {
+  .difference__name {
+    font-size: 14px;
+  }
 }
 .difference__professional {
   font-size: 14px;
@@ -839,7 +855,7 @@ body._lock {
   color: #000;
   background-color: rgb(174, 118, 255);
 }
-@media (max-width: 400px) {
+@media (max-width: 930px) {
   .difference__play {
     padding: 13px;
     font-size: 14px;
@@ -1656,11 +1672,20 @@ body._lock {
     border-radius: 0;
   }
 }
+.subscribe__input {
+  flex: 0 1 100%;
+}
 .subscribe__input input {
   background: inherit;
   color: rgb(85, 85, 85);
   font-weight: 300;
   line-height: 175%;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .subscribe__input input {
+    font-size: 14px;
+  }
 }
 @media (max-width: 400px) {
   .subscribe__input input {

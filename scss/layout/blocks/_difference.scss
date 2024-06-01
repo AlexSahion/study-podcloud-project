@@ -95,14 +95,22 @@
 			padding: 10px;
 			transition: $default-trans;
 			@media (max-width: 930px) {
-				column-gap: 15px;
+				column-gap: 7px;
 			}
 			&:hover{
 				box-shadow: 0px 10px 50px 0px rgba(174, 118, 255, 0.3);
 			}
+			
 		}
 
 		&__avatar {
+			min-width: 60px;
+			img{
+				max-width: 100%;
+			}
+			@media (max-width: 930px) {
+				min-width: 40px;
+			}
 		}
 
 		&__info {
@@ -120,6 +128,9 @@
 			font-weight: 500;
 			line-height: prc(24, 16);
 			text-transform: capitalize;
+			@media (max-width: 400px) {
+				font-size: 14px;
+			}
 		}
 
 		&__professional {
@@ -152,7 +163,7 @@
 				color: #000;
 				background-color: $purple-color;
 			}
-			@media (max-width: 400px) {
+			@media (max-width: 930px) {
 				padding: 13px;
 				font-size: 14px;
 			}

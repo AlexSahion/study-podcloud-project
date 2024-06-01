@@ -87,11 +87,16 @@
 	}
 
 	&__input {
+		flex: 0 1 100%;
 		input{
 			background: inherit;
 			color: $main-color;
 			font-weight: 300;
 			line-height: prc(28, 16);
+			width: 100%;
+			@media (max-width: 500px) {
+				font-size: 14px;
+			}
 			@media (max-width: 400px) {
 				background-color: #fff;
 				padding: 15px 25px;
