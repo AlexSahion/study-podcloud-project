@@ -38,6 +38,9 @@ body{
 	&:active{
 		transform: translate(0, 2px);
 	}
+	@media (max-width:640px) {
+		white-space: normal;
+	}
 }
 
 .title {
