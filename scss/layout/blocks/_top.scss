@@ -130,5 +130,10 @@
 		border-radius: 50%;
 		background: rgba(174, 118, 255, 0.1);
 		padding: 11px;
+		transition: $default-trans;
+		&:hover{
+			background: rgb(174, 118, 255);
+			color: #000;
+		}
 	}
 }
