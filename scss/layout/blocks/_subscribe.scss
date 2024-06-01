@@ -1,6 +1,8 @@
 .subscribe {
 	&__container {
-		
+		margin-bottom: -200px;
+		position: relative;
+		z-index: 3;
 	}
 
 	&__body {
