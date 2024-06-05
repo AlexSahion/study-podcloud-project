@@ -26,3 +26,18 @@ new Swiper('.shows__container', {
 		}
 	}
 })
+
+new Swiper('.about__slider', {
+	slidesPerView: 1,
+	loop: true,
+	spaceBetween: 30,
+	breakpoints: {
+		891: {
+			slidesPerView: 2,
+		}
+	},
+	navigation: {
+		prevEl: '.about__prev',
+		nextEl: '.about__next',
+	},
+})
