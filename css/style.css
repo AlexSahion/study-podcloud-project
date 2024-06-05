@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Rubik:300,regular,500");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700");
 @font-face {
@@ -1564,6 +1565,215 @@ body._lock {
 .item-top__link:hover {
   background: rgb(174, 118, 255);
   color: #000;
+}
+
+.about {
+  background: rgb(249, 249, 249);
+}
+.about__container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+@media (max-width: 1350px) {
+  .about__container {
+    padding-top: calc(40px + 80 * (100vw - 320px) / 1030);
+  }
+}
+@media (max-width: 1350px) {
+  .about__container {
+    padding-bottom: calc(60px + 60 * (100vw - 320px) / 1030);
+  }
+}
+.about__titles {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+.about__title {
+  text-align: center;
+  margin-bottom: 14px;
+}
+@media (max-width: 470px) {
+  .about__title {
+    font-size: 34px;
+  }
+}
+@media (max-width: 340px) {
+  .about__title {
+    font-size: 28px;
+  }
+}
+.about__subtitle {
+  text-align: center;
+}
+@media (max-width: 470px) {
+  .about__subtitle {
+    font-size: 16px;
+  }
+}
+.about__content {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.about__img {
+  max-width: 40%;
+}
+.about__img img {
+  max-width: 100%;
+}
+@media (max-width: 891px) {
+  .about__img {
+    display: none;
+  }
+}
+.about__slider {
+  min-width: 0;
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  max-height: 100%;
+  min-height: 100%;
+  transform: translate(30%, -50%);
+}
+.about__slider .swiper-slide-active {
+  opacity: 1;
+}
+@media (max-width: 891px) {
+  .about__slider {
+    position: static;
+    transform: translate(0, 0%);
+    top: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+  }
+}
+.about__wrapper {
+  max-width: 800px;
+}
+.about__slide {
+  opacity: 0.3;
+  transition: all 300ms ease-in-out;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  border-radius: 20px;
+  background: rgb(255, 255, 255);
+  padding: 30px;
+}
+@media (max-width: 990px) {
+  .about__slide {
+    padding: 15px;
+  }
+}
+.about__navigation {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  z-index: 10;
+  width: 100%;
+  transform: translate(-30%, 0);
+}
+.about__navigation div {
+  padding: 19px;
+  border: 1px solid rgb(174, 118, 255);
+  border-radius: 50%;
+  transition: all 300ms ease-in-out;
+}
+.about__navigation div:before {
+  color: rgb(174, 118, 255);
+  transition: all 300ms ease-in-out;
+}
+.about__navigation div:hover {
+  background-color: rgb(174, 118, 255);
+}
+.about__navigation div:hover::before {
+  color: #fff;
+}
+@media (max-width: 891px) {
+  .about__navigation {
+    position: static;
+    transform: translate(0, 0);
+    width: auto;
+  }
+}
+.about__prev {
+  transform: rotate(180deg);
+}
+.about__stars {
+  display: flex;
+  -moz-column-gap: 3px;
+       column-gap: 3px;
+}
+.about__stars span {
+  color: rgb(255, 194, 0);
+}
+.about__text {
+  max-height: 120px;
+  overflow: auto;
+}
+.about__text::-webkit-scrollbar {
+  width: 4px; /* ширина для вертикального скролла */
+  height: 8px; /* высота для горизонтального скролла */
+  background-color: inherit;
+}
+.about__text::-webkit-scrollbar-thumb {
+  background-color: #878686;
+  border-radius: 9px;
+}
+@media (max-width: 1106px) {
+  .about__text {
+    max-height: 70px;
+  }
+}
+@media (max-width: 891px) {
+  .about__text {
+    max-height: 130px;
+  }
+}
+.about__info {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.about__per {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about__per img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about__name {
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+.about__country {
+  color: rgb(85, 85, 85);
+  font-weight: 300;
+  line-height: 118.75%;
 }
 
 .subscribe__container {
