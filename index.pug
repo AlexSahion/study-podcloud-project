@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		title Pug
+		link(rel="stylesheet", href="css/style.css")
+		link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css")
+	body
+		.wrapper 
+			include html/header.pug
+			main 
+				include html/main-page.pug
+				include html/sections/difference.pug
+				include html/sections/categories.pug
+				include html/sections/popular.pug
+				include html/sections/shows.pug
+				include html/sections/apps.pug
+				include html/sections/top.pug
+				include html/sections/about.pug
+				include html/sections/subscribe.pug
+			footer.footer 
+				include html/footer.pug
+		script(src='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js')
+		script(src='js/script.js')
