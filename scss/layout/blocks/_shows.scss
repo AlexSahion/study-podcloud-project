@@ -47,7 +47,7 @@
 		transition: $default-trans;
 		height: 100%;
 		&:hover{
-			box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
+			box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.3);
 			
 		}
 	}
@@ -90,20 +90,14 @@
 		padding: 5px;
 		&:hover{
 			background-color: $purple-color;
+			.item-show__num-episode{
+				color: #fff;
+			}
 			.item-show__play{
 				&::before{
 					transition: $default-trans;
 					color: #fff;
 				}
-				&:hover{
-					background-color: #fff;
-					&::before{
-						color: #000;
-					}
-				}
-			}
-			.item-show__num-episode{
-				color: #fff;
 			}
 			.item-show__name{
 				color: #fff;
