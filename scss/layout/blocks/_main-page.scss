@@ -12,7 +12,6 @@
 		@media (max-width:872px) {
 			flex-direction: column;
 			row-gap: 40px;
-			
 		}
 	}
 
@@ -59,9 +58,9 @@
 	&__btn {
 		display: flex;
 		column-gap: 10px;
-		&-revers{
-			flex-direction: row-reverse;
-		}
+	}
+	&__btn-revers{
+		flex-direction: row-reverse;
 	}
 }
 
