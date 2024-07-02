@@ -324,7 +324,7 @@ body._lock {
     position: fixed;
     top: -100%;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.807);
+    background-color: rgba(0, 0, 0, 0.907);
     padding-top: 70px;
     padding-bottom: 50px;
     overflow: auto;
@@ -1210,13 +1210,13 @@ body._lock {
   color: #fff;
   transition: all 300ms ease-in-out;
 }
-.item-popular__listening:hover {
+.item-popular_listening:hover {
   background-color: #0fbfe7;
 }
-.item-popular__fav:hover {
+.item-popular_fav:hover {
   background-color: #ff264a;
 }
-.item-popular__comment:hover {
+.item-popular_comment:hover {
   background-color: #26ff4e;
 }
 
@@ -1281,7 +1281,7 @@ body._lock {
   height: 100%;
 }
 .shows__item:hover {
-  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.3);
 }
 
 .item-show__img {
@@ -1321,17 +1321,11 @@ body._lock {
 .item-show__episode:hover {
   background-color: rgb(174, 118, 255);
 }
-.item-show__episode:hover .item-show__play::before {
-  transition: all 300ms ease-in-out;
+.item-show__episode:hover .item-show__num-episode {
   color: #fff;
 }
-.item-show__episode:hover .item-show__play:hover {
-  background-color: #fff;
-}
-.item-show__episode:hover .item-show__play:hover::before {
-  color: #000;
-}
-.item-show__episode:hover .item-show__num-episode {
+.item-show__episode:hover .item-show__play::before {
+  transition: all 300ms ease-in-out;
   color: #fff;
 }
 .item-show__episode:hover .item-show__name {
@@ -1564,7 +1558,7 @@ body._lock {
 }
 .item-top__link:hover {
   background: rgb(174, 118, 255);
-  color: #000;
+  color: #fff;
 }
 
 .about {
@@ -1639,6 +1633,7 @@ body._lock {
   max-height: 100%;
   min-height: 100%;
   transform: translate(30%, -50%);
+  border-radius: 20px;
 }
 .about__slider .swiper-slide-active {
   opacity: 1;
@@ -1646,7 +1641,7 @@ body._lock {
 @media (max-width: 891px) {
   .about__slider {
     position: static;
-    transform: translate(0, 0%);
+    transform: translate(0, 0);
     top: 0;
     flex-direction: column;
     align-items: center;
@@ -1656,6 +1651,7 @@ body._lock {
 }
 .about__wrapper {
   max-width: 800px;
+  border-radius: 20px;
 }
 .about__slide {
   opacity: 0.3;
@@ -1687,6 +1683,7 @@ body._lock {
 }
 .about__navigation div {
   padding: 19px;
+  cursor: pointer;
   border: 1px solid rgb(174, 118, 255);
   border-radius: 50%;
   transition: all 300ms ease-in-out;
@@ -1945,6 +1942,7 @@ body._lock {
 }
 .footer__container {
   padding-top: 271px;
+  padding-bottom: 50px;
   display: flex;
   align-items: start;
   justify-content: space-between;
